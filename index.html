@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linktreenya evan</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="WhatsApp Image 2024-05-01 at 13.03.28.jpeg" alt="Your Photo" class="profile-pic">
+        <h1>Beranda EVAN</h1>
+        <div class="links">
+            <a href="https://www.youtube.com/@evanirmansyah1142">Channel YouTube</a>
+            <a href="https://sociabuzz.com/evantung123">INFO LINK DONATE PUH</a>
+            <a href="https://www.instagram.com/evnirmnsyh?igsh=OHc4NjA0OGZiaDM%3D&utm_source=qr">Instagram</a>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://i.ytimg.com/vi/D0bUchnrdfk/maxresdefault.jpg">pacar gweh</a>
+            <!-- Tambahkan link lain di sini -->
+        </div>
+    </div>
+
+    <script>
+        // Menambahkan animasi saat gambar dimuat
+        window.onload = function() {
+            const profilePic = document.querySelector('.profile-pic');
+            profilePic.style.opacity = '0';
+            profilePic.style.transform = 'scale(0.5)';
+            profilePic.style.transition = 'opacity 1s, transform 1s';
+
+            setTimeout(function() {
+                profilePic.style.opacity = '1';
+                profilePic.style.transform = 'scale(1)';
+            }, 500);
+        };
+
+        // Memberikan efek hover pada link
+        const links = document.querySelectorAll('.links a');
+        links.forEach(link => {
+            link.addEventListener('mouseover', function() {
+                this.style.backgroundColor = '#0056b3';
+            });
+            link.addEventListener('mouseout', function() {
+                this.style.backgroundColor = '#007bff';
+            });
+        });
+    </script>
+</body>
+</html>
